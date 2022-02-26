@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1 class="fs-1 fw-bold border-bottom py-3 text-muted">Bookmarker</h1>
+        <div class="text-center p-4 bg-light">
+            <h2 class="fs-2 fw-bold py-4">Bookmark your favorite sites</h2>
+
+
+            <form action="">
+                <div class="mb-3 row">
+                    <label for="BookName" class="col-sm-2 col-form-label">Site Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" placeholder="BookMark Name" class="form-control" id="BookName"
+                            >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="UrlInput" class="col-sm-2 col-form-label ">Site URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" placeholder="Website URL" class="form-control" id="UrlInput">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="addBook()">Submit</button>
+
+            </form>
+
+
+
+        </div>
+        <table class="table   table-dark table-striped my-5">
+            <tbody id="body">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
